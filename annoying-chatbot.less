@@ -1,0 +1,60 @@
+@white: #FFFFFF;
+@black: #000000;
+@blue:  #00aaff;
+
+#chatbot {
+
+  #chatbot-message {
+    padding: 0 0;
+    border: 1px #d7d7d7 solid;
+    //    background-color: darken(@white, 10%);
+    //    box-shadow: inset 0 1px 6px rgba(0,0,0,0.15);
+    height: 200px;
+    border-radius: 4px;
+    margin: 0 0 12px 0;
+    font-size: 12px;
+    overflow: hidden;
+    overflow-y: auto;
+
+    p {
+      padding: 6px 12px;
+      //      border-bottom: 1px darken(@white, 20%) solid;
+      //      box-shadow: 0 1px 0 darken(@white, 5%);
+      color: lighten(@black, 40%);
+      margin: 0;
+
+      &.from-bot {
+        color: @blue;
+
+        .user {
+          color: @blue;
+        }
+      }
+
+      &:nth-child(even) {
+        background-color: #f7fcff;
+      }
+    }
+
+    .user {
+      font-weight: bold;
+      color: lighten(@black, 20%);
+    }
+
+    .message {
+      font-style: italic;
+      color: darken(@white, 25%);
+
+      .glyphicon {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .input-group-btn {
+
+    .btn {
+      border-left: 0;
+    }
+  }
+}
