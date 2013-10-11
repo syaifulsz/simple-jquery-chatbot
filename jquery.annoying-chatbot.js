@@ -83,6 +83,18 @@ $(document).ready(function() {
 
             sendMessage(messageArray);
         }
+
+        else {
+
+            var messageArray = [
+                'Oops... I don\'t really know what that means yet.',
+                'Developer who did this plugin should "teach" me with more words.',
+                'I\'m pretty stupid at this point, I don\'t really know what to respond to you. Say something else.',
+            ];
+
+            sendMessage(messageArray);
+
+        }
     }
 
     // scroll to the bottom of chat box
