@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Annoying Chatbot | A Simple jQuery Chatbot</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Best used for automated sales pitch or FAQ helper on site. This chatbot is built with jQuery, its super easy to extend and modified to fit your requirement.">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Annoying Chatbot | A Simple jQuery Chatbot" />
+    <meta property="og:description" content="Best used for automated sales pitch or FAQ helper on site. This chatbot is built with jQuery, its super easy to extend and modified to fit your requirement." />
+    <meta property="og:url" content="http://syaifulshahzinan.com/community/annoying-chatbot/" />
+    <meta property="og:site_name" content="Malaysia Wordpress Developer, Graphic Web Designer, Opencart, Custom CMS Theme Development" />
+    <meta property="og:type" content="product" />
+    <meta property="og:image" content="http://syaifulshahzinan.com/community/annoying-chatbot/screenshot.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon.png">
+    <link rel="apple-touch-icon-precomposed" href="icon.png">
+    <link rel="shortcut icon" href="icon.png">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../annoying-chatbot.css">
+</head>
+<body>
+
+<div id="fb-root"></div>
+
+<div id="main-demo-body">
+    <div class="container">
+
+        <div class="demo-primary-header">
+            <div class="well">
+                <h1 class="main-title">
+                    <span class="title">Simple jQuery Chatbot</span>
+                </h1>
+                <p>
+                    Do you still remember Eliza? The first prototype of psychology bot, to help solve your problem, or
+                    make it worse. Haha.
+                </p>
+                <p>
+                    This is a simple jQuery chatbot that can be useful for automated sales pitch or FAQ helper on site. This
+                    chatbot is built with jQuery, its super easy to extend and modified to fit your requirement.
+                </p>
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="download">
+                            <a id="btnDownloadTop" href="https://github.com/syaifulsz/simple-jquery-chatbot" class="btn btn-primary btn-lg btn-block">Download at GitHub <i class="glyphicon glyphicon-download-alt"></i></a>
+                        </div><!-- .download -->
+                    </div><!-- .col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="share facebook-share"><div class="fb-like" data-href="http://www.syaifulshahzinan.com/community/annoying-chatbot/" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="true"></div></div>
+                        <div class="share twitter-share"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.syaifulshahzinan.com/community/annoying-chatbot/" data-via="syaifulsz">Tweet</a></div>
+                        <div class="share googleplus-share">
+                            <div class="g-plus" data-action="share" data-href="http://www.syaifulshahzinan.com/community/annoying-chatbot/"></div>
+                        </div><!-- .share -->
+                    </div><!-- .col-md-6 -->
+                </div><!-- .row -->
+            </div><!-- .well -->
+        </div><!-- .demo-primary-header -->
+
+        <div class="demo-widget">
+            <div class="demo-widget-header">Demo</div>
+            <div class="demo-widget-body">
+
+                <div id="chatbot">
+                    <div id="chatbot-message">
+                        <p><span class="user">Bot: </span>Hello and welcome. Ready for the first riddle?</p>
+                    </div>
+                    <form action="">
+                        <div class="input-group">
+                            <input id="chatbot-input" type="text" class="form-control" placeholder="message..." autocomplete="off">
+                            <div class="input-group-btn">
+                                <button id="chatbot-submit" class="btn btn-default" type="submit">Send</button>
+                            </div>
+                        </div><!-- .input-group -->
+                    </form>
+
+                </div><!-- #chatbot -->
+
+            </div><!-- .demo-widget-body -->
+        </div><!-- #demo -->
+
+        <div class="demo-primary-header">
+            <div class="well">
+                <p>Contribution with love by <a href="http://syaifulshahzinan.com/">Syaiful Shah Zinan</a></p>
+                <p><div class="fb-like" data-href="https://www.facebook.com/syaifulshahzinanblog" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div></p>
+                <p><a href="https://twitter.com/syaifulsz" class="twitter-follow-button" data-show-count="false">Follow @syaifulsz</a></p>
+                <div class="divider"></div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="download">
+                            <a id="btnDownloadBottom" href="https://github.com/syaifulsz/simple-jquery-chatbot" class="btn btn-primary btn-lg btn-block">Download at GitHub <i class="glyphicon glyphicon-download-alt"></i></a>
+                        </div><!-- .download -->
+                    </div><!-- .col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="share facebook-share"><div class="fb-like" data-href="http://www.syaifulshahzinan.com/community/annoying-chatbot/" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="true"></div></div>
+                        <div class="share twitter-share"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.syaifulshahzinan.com/community/annoying-chatbot/" data-via="syaifulsz">Tweet</a></div>
+                        <div class="share googleplus-share">
+                            <div class="g-plus" data-action="share" data-href="http://www.syaifulshahzinan.com/community/annoying-chatbot/"></div>
+                        </div><!-- .share -->
+                    </div><!-- .col-md-6 -->
+                </div><!-- .row -->
+            </div><!-- .well -->
+        </div><!-- .demo-primary-header -->
+
+        <div id="disqus-comment-container">
+            <div id="disqus_thread"></div>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div><!-- #disqus-comment-container -->
+
+    </div><!-- .container -->
+</div><!-- #main-demo-body -->
+
+<script src="../jquery/jquery.min.js"></script>
+<script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../jquery.cookie/jquery.cookie.js"></script>
+<script src="../phpjs/functions/array/in_array.js"></script>
+<script>
+
+    $(document).ready(function() {
+
+        // Annoying Chatbot
+        //==============================================================
+
+        $('#chatbot').on('click', '#chatbot-submit', function(e) {
+            e.preventDefault();
+
+            message = $('#chatbot-input').val();
+            message = message.toLowerCase();
+            sendMessage();
+            bot(message);
+        });
+
+        function bot(message) {
+
+            if (    message.indexOf('yes')  >= 0 ||
+                    message.indexOf('ya')   >= 0 ||
+                    message.indexOf('yea')  >= 0 ||
+                    message.indexOf('okay') >= 0 ||
+                    message.indexOf('yeah') >= 0 ||
+                    message.indexOf('yeha') >= 0) {
+
+                var messageArray = [
+                    'Who hacked Google Malaysia DNS?',
+                    'What happen to toilet key?',
+                    'Who shit on his phone?',
+                    'When we found a new bug, who eats it?'
+                ];
+                var respond = messageArray[Math.floor(Math.random() * messageArray.length)];
+
+                $.cookie('chatbot_demo_riddle', respond);
+
+                setTimeout(function() {
+                    botPre     = '<span class="message">Bot is writing... <i class="glyphicon glyphicon-pencil"></i></span>';
+                    botVal     = respond;
+                    botMessage = $('#chatbot-message').html() + '<p class="from-bot"><span class="user">Bot: </span>' + botPre + '</p>';
+                    $('#chatbot-message').html(botMessage);
+                    scrollToMessage();
+                }, 800);
+
+                setTimeout(function() {
+                    botMessageReplace = $('#chatbot-message .from-bot:last-child()');
+                    botMessage = '<span class="user">Bot: </span>' + botVal;
+                    botMessageReplace.html(botMessage);
+                    scrollToMessage();
+                }, 2800);
+            }
+
+            else if ($.cookie('chatbot_demo_riddle') && $.cookie('chatbot_demo_riddle') == 'Who hacked Google Malaysia DNS?') {
+
+                if (message.indexOf('behdad') >= 0) {
+                    var newMessage = [
+                        'Yeah, cantik...',
+                        'Awesome! You probably his accomplice! Or you maybe Behdad?',
+                    ];
+                    $.removeCookie('chatbot_demo_riddle');
+                    sendMessage(newMessage);
+
+                    setTimeout(function() {
+                        var message = ['So now, are you ready for the next riddle?'];
+                        sendMessage(message);
+                    }, 3000);
+                }
+
+                else {
+                    var wrongAnswer = [
+                        'You better kill yourself.',
+                        'Wrong answer!',
+                        'Kill yourself now!',
+                        'You still didn\'t answer who hacked Google Malaysia DNS?',
+                    ];
+                    sendMessage(wrongAnswer);
+                }
+            }
+
+            else if ($.cookie('chatbot_demo_riddle') && $.cookie('chatbot_demo_riddle') == 'What happen to toilet key?') {
+
+                if (message.indexOf('tarun') >= 0) {
+                    var newMessage = [
+                        'Yeah, cantik...',
+                        'Awesome! You probably his accomplice! Or you maybe Tarun?',
+                    ];
+                    $.removeCookie('chatbot_demo_riddle');
+                    sendMessage(newMessage);
+
+                    setTimeout(function() {
+                        var message = ['So now, are you ready for the next riddle?'];
+                        sendMessage(message);
+                    }, 2000);
+                }
+
+                else {
+                    var wrongAnswer = [
+                        'You better kill yourself.',
+                        'Wrong answer!',
+                        'Kill yourself now!',
+                        'You still didn\'t answer what happen to toilet key?',
+                    ];
+                    sendMessage(wrongAnswer);
+                }
+            }
+
+            else if ($.cookie('chatbot_demo_riddle') && $.cookie('chatbot_demo_riddle') == 'Who shit on his phone?') {
+
+                if (message.indexOf('kok hsien') >= 0 || message.indexOf('kh') >= 0 || message.indexOf('chin kok hsien') >= 0) {
+                    var newMessage = [
+                        'Wahahaha XD!',
+                        'Awesome! You probably his accomplice! Or you maybe Kok Hsien?',
+                    ];
+                    $.removeCookie('chatbot_demo_riddle');
+                    sendMessage(newMessage);
+
+                    setTimeout(function() {
+                        var message = ['So now, are you ready for the next riddle?'];
+                        sendMessage(message);
+                    }, 2000);
+                }
+
+                else {
+                    var wrongAnswer = [
+                        'You better kill yourself.',
+                        'Wrong answer!',
+                        'Kill yourself now!',
+                        'You still didn\'t answer who shit on his phone?',
+                    ];
+                    sendMessage(wrongAnswer);
+                }
+            }
+
+            else if ($.cookie('chatbot_demo_riddle') && $.cookie('chatbot_demo_riddle') == 'When we found a new bug, who eats it?') {
+
+                if (message.indexOf('chan') >= 0) {
+                    var newMessage = [
+                        'Wahahaha XD!',
+                        'Awesome! You probably his accomplice! Or you maybe Chan?',
+                    ];
+                    $.removeCookie('chatbot_demo_riddle');
+                    sendMessage(newMessage);
+
+                    setTimeout(function() {
+                        var message = ['So now, are you ready for the next riddle?'];
+                        sendMessage(message);
+                    }, 2000);
+                }
+
+                else {
+                    var wrongAnswer = [
+                        'You better kill yourself.',
+                        'Wrong answer!',
+                        'Kill yourself now!',
+                        'You still didn\'t answer when we found a new bug, who eats it?',
+                    ];
+                    sendMessage(wrongAnswer);
+                }
+            }
+
+            else {
+                var messageArray = ['My respond is very limited. Please say something else.'];
+                sendMessage(messageArray);
+            }
+        }
+
+        // scroll to the bottom of chat box
+        function scrollToMessage() {
+            var msgBox = $('#chatbot-message');
+            var height = msgBox[0].scrollHeight;
+            msgBox.scrollTop(height);
+        }
+
+        // sending message
+        function sendMessage(message) {
+            if (message) {
+
+                var respond = message[Math.floor(Math.random() * message.length)];
+
+                setTimeout(function() {
+                    botPre     = '<span class="message">Bot is writing... <i class="glyphicon glyphicon-pencil"></i></span>';
+                    botVal     = respond;
+                    botMessage = $('#chatbot-message').html() + '<p class="from-bot"><span class="user">Bot: </span>' + botPre + '</p>';
+                    $('#chatbot-message').html(botMessage);
+                    scrollToMessage();
+                }, 800);
+
+                setTimeout(function() {
+                    botMessageReplace = $('#chatbot-message .from-bot:last-child()');
+                    botMessage = '<span class="user">Bot: </span>' + botVal;
+                    botMessageReplace.html(botMessage);
+                    scrollToMessage();
+                }, 2800);
+
+            } else {
+
+                userVal     = $('#chatbot-input').val();
+                userMessage = $('#chatbot-message').html() + '<p class="from-user"><span class="user">You: </span>' + userVal + '</p>';
+                $('#chatbot-message').html(userMessage);
+                scrollToMessage();
+                $('#chatbot-input').val('');
+
+            }
+        }
+    });
+
+</script>
+
+<script>
+
+var disqus_shortname = 'sszblog'; // required: replace example with your forum shortname
+
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+
+(function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=205397789496743";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-19410112-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+</body>
+</html>
