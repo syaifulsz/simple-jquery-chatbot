@@ -84,6 +84,15 @@ $(document).ready(function() {
             sendMessage(messageArray);
         }
 
+        else if (message == '') {
+
+            var messageArray = [
+                'Can you at least say something?',
+            ];
+
+            sendMessage(messageArray);
+        }
+
         else {
 
             var messageArray = [
@@ -108,12 +117,18 @@ $(document).ready(function() {
     function sendMessage(message) {
         if (message) {
 
+            $('#chatbot-input').addClass('disabled');
+            $('#chatbot-input').attr('disabled', 'disabled');
+            $('#chatbot-submit').addClass('disabled');
+            $('#chatbot-submit').attr('disabled', 'disabled');
+
             var respond = message[Math.floor(Math.random() * message.length)];
 
             setTimeout(function() {
                 botPre     = '<span class="message">Bot is writing... <i class="glyphicon glyphicon-pencil"></i></span>';
                 botVal     = respond;
                 botMessage = $('#chatbot-message').html() + '<p class="from-bot"><span class="user">Bot: </span>' + botPre + '</p>';
+                $('#chatbot-input').attr('placeholder', 'Bot is writing...');
                 $('#chatbot-message').html(botMessage);
                 scrollToMessage();
             }, 800);
@@ -121,8 +136,13 @@ $(document).ready(function() {
             setTimeout(function() {
                 botMessageReplace = $('#chatbot-message .from-bot:last-child()');
                 botMessage = '<span class="user">Bot: </span>' + botVal;
+                $('#chatbot-input').attr('placeholder', 'message...');
                 botMessageReplace.html(botMessage);
                 scrollToMessage();
+                $('#chatbot-input').removeClass('disabled');
+                $('#chatbot-input').removeAttr('disabled');
+                $('#chatbot-submit').removeClass('disabled');
+                $('#chatbot-submit').removeAttr('disabled');
             }, 2800);
 
         } else {
